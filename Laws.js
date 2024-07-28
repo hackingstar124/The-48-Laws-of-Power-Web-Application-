@@ -67,7 +67,7 @@ function nextLaw() {
     if (currentIndex < laws.length - 1) {
         currentIndex++;
     } else {
-        currentIndex = -1; // Loop back to the title page
+        currentIndex = -1; 
     }
     updateLaw();
 }
@@ -76,7 +76,7 @@ function prevLaw() {
     if (currentIndex > -1) {
         currentIndex--;
     } else {
-        currentIndex = laws.length - 1; // Loop back to the last law
+        currentIndex = laws.length - 1; 
     }
     updateLaw();
 }
