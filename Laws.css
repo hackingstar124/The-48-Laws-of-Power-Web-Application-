@@ -82,7 +82,7 @@ button {
     padding: 20px;
 }
 
-/* Hide scrollbar */
+
 .dropdown-content::-webkit-scrollbar {
     width: 0;
     height: 0;
