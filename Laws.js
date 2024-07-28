@@ -49,7 +49,7 @@ const laws = [
     "Assume Formlessness"
 ];
 
-let currentIndex = -1; // Start with title page
+let currentIndex = -1; 
 
 function updateLaw() {
     const lawTitle = document.getElementById('law-title');
@@ -91,10 +91,9 @@ function toggleDropdown() {
 function selectLaw(index) {
     currentIndex = index;
     updateLaw();
-    toggleDropdown(); // Close dropdown after selection
+    toggleDropdown(); 
 }
 
-// Create dropdown options dynamically
 const dropdown = document.getElementById('dropdown');
 laws.forEach((law, index) => {
     const lawOption = document.createElement('a');
@@ -104,5 +103,4 @@ laws.forEach((law, index) => {
     dropdown.appendChild(lawOption);
 });
 
-// Initialize with the title page
 updateLaw();
